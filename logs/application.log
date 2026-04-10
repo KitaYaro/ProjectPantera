@@ -1,0 +1,242 @@
+2026-04-08 17:47:14.233 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-04-08 17:47:14.252 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-04-08 17:47:14.267 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Displaying the login page
+2026-04-08 17:47:14.273 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-08 17:47:14.274 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-04-08 17:47:14.281 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-08 17:47:14.281 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-04-08 17:47:14.613 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-04-08 17:47:14.614 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-04-08 17:47:14.620 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-08 17:47:14.621 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-04-08 17:47:14.625 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-08 17:47:14.625 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-04-08 17:47:14.625 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-04-08 17:47:14.630 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-04-08 17:47:14.630 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-04-08 17:47:14.774 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-04-08 17:47:15.082 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.082 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-04-08 17:47:15.084 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.087 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.088 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-08 17:47:15.088 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-04-08 17:47:15.093 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.094 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-04-08 17:47:15.094 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-04-08 17:47:15.097 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.100 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.101 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-04-08 17:47:15.101 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-04-08 17:47:15.102 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.103 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-08 17:47:15.104 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-04-08 17:47:15.106 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.107 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-04-08 17:47:15.110 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 17:47:15.110 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-04-08 17:47:15.111 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists
+2026-04-08 18:20:53.725 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-04-08 18:20:53.731 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-04-08 18:20:53.749 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Displaying the login page
+2026-04-08 18:20:53.759 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-08 18:20:53.760 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-04-08 18:20:53.767 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-08 18:20:53.768 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-04-08 18:20:54.142 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-04-08 18:20:54.143 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-04-08 18:20:54.148 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-08 18:20:54.149 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-04-08 18:20:54.155 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-08 18:20:54.155 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-04-08 18:20:54.156 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-04-08 18:20:54.160 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-04-08 18:20:54.161 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-04-08 18:20:54.315 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-04-08 18:20:54.616 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.616 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-04-08 18:20:54.618 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.622 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.623 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-08 18:20:54.623 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-04-08 18:20:54.627 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.628 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-04-08 18:20:54.629 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-04-08 18:20:54.632 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.636 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.637 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-04-08 18:20:54.637 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-04-08 18:20:54.640 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.642 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-08 18:20:54.642 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-04-08 18:20:54.644 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.644 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-04-08 18:20:54.647 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:20:54.648 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-04-08 18:20:54.648 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists
+2026-04-08 18:30:13.154 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-04-08 18:30:13.160 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-04-08 18:30:13.177 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Displaying the login page
+2026-04-08 18:30:13.187 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-08 18:30:13.187 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-04-08 18:30:13.192 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-08 18:30:13.194 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-04-08 18:30:13.514 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-04-08 18:30:13.514 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-04-08 18:30:13.519 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-08 18:30:13.519 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-04-08 18:30:13.524 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-08 18:30:13.524 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-04-08 18:30:13.525 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-04-08 18:30:13.531 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-04-08 18:30:13.532 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-04-08 18:30:13.672 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-04-08 18:30:14.048 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-08 18:30:14.240 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-04-08 18:30:14.248 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-04-08 18:30:14.248 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://postgres-1:5432/quest]
+2026-04-08 18:30:14.248 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-04-08 18:30:14.248 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-04-08 18:30:14.252 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2026-04-08 18:30:24.070 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.IllegalStateException: Cannot get a connection as the driver manager is not properly initialized
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.getConnection(DriverManagerConnectionProviderImpl.java:260)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:68)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:52)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:136)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:247)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:133)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:43)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:61)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:500)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:373)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:551)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:102)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:82)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:136)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:247)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.service.ServiceRegistry.requireService(ServiceRegistry.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:404)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:129)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:449)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:101)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:966)
+	at com.javarush.matsarskaya.util.HibernateUtil.<clinit>(HibernateUtil.java:33)
+	at com.javarush.matsarskaya.controller.HttpResolver.<init>(HttpResolver.java:14)
+	at com.javarush.matsarskaya.controller.HttpResolverTest.setUp(HttpResolverTest.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:78)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:521)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$23(ClassBasedTestDescriptor.java:506)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:175)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:172)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-04-08 18:30:24.369 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.370 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-04-08 18:30:24.373 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.375 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.376 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-08 18:30:24.376 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-04-08 18:30:24.381 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.383 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-04-08 18:30:24.383 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-04-08 18:30:24.385 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.388 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.389 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-04-08 18:30:24.389 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-04-08 18:30:24.391 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.392 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-08 18:30:24.392 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-04-08 18:30:24.395 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.396 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-04-08 18:30:24.398 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-08 18:30:24.399 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-04-08 18:30:24.400 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists

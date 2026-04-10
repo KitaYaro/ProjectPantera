@@ -1,0 +1,561 @@
+2026-01-29 13:57:14.651 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.669 [main] DEBUG c.j.matsarskaya.service.UserService - Попытка выхода без активной сессии
+2026-01-29 13:57:14.687 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.732 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.733 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 13:57:14.734 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser успешно вошёл в систему
+2026-01-29 13:57:14.742 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.744 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 13:57:14.745 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 13:57:14.750 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.753 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.755 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: newuser
+2026-01-29 13:57:14.756 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь newuser успешно зарегистрирован
+2026-01-29 13:57:14.760 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.760 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 13:57:14.761 [main] WARN  c.j.matsarskaya.service.UserService - Неверный пароль для пользователя: testuser
+2026-01-29 13:57:14.764 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.765 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser вышел из системы
+2026-01-29 13:57:14.768 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.769 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 13:57:14.786 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 13:57:14.787 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 13:57:14.787 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует
+2026-01-29 14:04:47.776 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:04:47.793 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: nonexistent
+2026-01-29 14:04:47.843 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:04:47.845 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: existinguser
+2026-01-29 14:04:47.845 [main] WARN  c.j.m.repository.FileUserRepository - Пользователь existinguser уже существует в хранилище
+2026-01-29 14:04:47.853 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:04:47.854 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: testuser
+2026-01-29 14:04:47.855 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь testuser найден
+2026-01-29 14:04:47.862 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:04:47.863 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 14:04:47.866 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:04:47.867 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 14:04:47.867 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 14:04:47.870 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:04:47.871 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: newuser
+2026-01-29 14:04:47.872 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь newuser успешно сохранён
+2026-01-29 14:07:20.282 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: nonexistent
+2026-01-29 14:07:20.285 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: пользователь nonexistent не найден
+2026-01-29 14:07:20.350 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Отображение страницы входа
+2026-01-29 14:07:20.358 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 14:07:20.358 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Успешный вход пользователя: testuser
+2026-01-29 14:07:20.363 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 14:07:20.363 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: неверный пароль для пользователя testuser
+2026-01-29 14:14:37.672 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:14:37.674 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:14:37.675 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:14:37.726 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:14:37.727 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:14:37.727 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:14:37.729 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:14:37.729 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:14:37.729 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:14:37.731 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:14:37.731 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:14:37.731 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:14:37.733 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:14:37.734 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:14:37.734 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:14:37.736 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:14:37.736 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:14:37.737 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:14:37.739 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:14:37.739 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:14:37.739 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:17:55.701 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:17:55.702 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:17:55.702 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: testuser
+2026-01-29 14:17:55.704 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: testuser
+2026-01-29 14:17:55.704 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: testuser
+2026-01-29 14:17:55.705 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь testuser успешно сохранён
+2026-01-29 14:17:55.705 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser успешно зарегистрирован
+2026-01-29 14:17:55.729 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 14:17:55.730 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: testuser
+2026-01-29 14:17:55.730 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь testuser найден
+2026-01-29 14:17:55.730 [main] WARN  c.j.matsarskaya.service.UserService - Неверный пароль для пользователя: testuser
+2026-01-29 14:17:55.770 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:17:55.770 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:17:55.770 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 14:17:55.770 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 14:17:55.770 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 14:17:55.770 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 14:17:55.776 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:17:55.776 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:17:55.776 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 14:17:55.776 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 14:17:55.777 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: existinguser
+2026-01-29 14:17:55.777 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь existinguser успешно сохранён
+2026-01-29 14:17:55.777 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь existinguser успешно зарегистрирован
+2026-01-29 14:17:55.778 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 14:17:55.778 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 14:17:55.778 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует
+2026-01-29 14:17:56.577 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 14:17:56.589 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:17:56.589 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:17:56.589 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: testuser
+2026-01-29 14:17:56.589 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: testuser
+2026-01-29 14:17:56.589 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем testuser уже существует
+2026-01-29 14:19:01.245 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:19:01.247 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:19:01.247 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: testuser
+2026-01-29 14:19:01.248 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: testuser
+2026-01-29 14:19:01.248 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем testuser уже существует
+2026-01-29 14:19:01.270 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:19:01.270 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:19:01.298 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 14:19:01.298 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 14:19:01.298 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 14:19:01.299 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 14:19:01.314 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 14:19:01.314 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 14:19:01.314 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 14:19:01.315 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 14:19:01.315 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует
+2026-01-29 14:19:02.127 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 14:20:41.716 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:20:41.717 [main] DEBUG c.j.m.service.StatisticService - Регистрация попытки для пользователя: testuser
+2026-01-29 14:20:41.718 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: testuser
+2026-01-29 14:20:41.726 [main] DEBUG c.j.m.service.StatisticService - Получение статистики для пользователя: testuser
+2026-01-29 14:20:41.794 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:20:41.794 [main] DEBUG c.j.m.service.StatisticService - Регистрация попытки для пользователя: user1
+2026-01-29 14:20:41.794 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: user1
+2026-01-29 14:20:41.804 [main] INFO  c.j.m.service.StatisticService - Регистрация победы для пользователя: user1
+2026-01-29 14:20:41.804 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: user1
+2026-01-29 14:20:41.804 [main] DEBUG c.j.m.service.StatisticService - Регистрация попытки для пользователя: user2
+2026-01-29 14:20:41.804 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: user2
+2026-01-29 14:20:41.805 [main] INFO  c.j.m.service.StatisticService - Регистрация поражения для пользователя: user2
+2026-01-29 14:20:41.805 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: user2
+2026-01-29 14:20:41.805 [main] DEBUG c.j.m.service.StatisticService - Получение статистики для пользователя: user1
+2026-01-29 14:20:41.805 [main] DEBUG c.j.m.service.StatisticService - Получение статистики для пользователя: user2
+2026-01-29 14:20:41.810 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:20:41.810 [main] DEBUG c.j.m.service.StatisticService - Регистрация попытки для пользователя: newuser
+2026-01-29 14:20:41.810 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: newuser
+2026-01-29 14:20:41.819 [main] DEBUG c.j.m.service.StatisticService - Получение статистики для пользователя: newuser
+2026-01-29 14:20:41.825 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 14:20:41.825 [main] DEBUG c.j.m.service.StatisticService - Регистрация попытки для пользователя: testuser
+2026-01-29 14:20:41.825 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: testuser
+2026-01-29 14:20:41.835 [main] INFO  c.j.m.service.StatisticService - Регистрация победы для пользователя: testuser
+2026-01-29 14:20:41.835 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: testuser
+2026-01-29 14:20:41.835 [main] INFO  c.j.m.service.StatisticService - Регистрация победы для пользователя: testuser
+2026-01-29 14:20:41.835 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: testuser
+2026-01-29 14:20:41.836 [main] INFO  c.j.m.service.StatisticService - Регистрация поражения для пользователя: testuser
+2026-01-29 14:20:41.836 [main] DEBUG c.j.m.service.StatisticService - Получение или создание статистики для пользователя: testuser
+2026-01-29 14:20:41.836 [main] DEBUG c.j.m.service.StatisticService - Получение статистики для пользователя: testuser
+2026-01-29 15:01:36.383 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.400 [main] DEBUG c.j.matsarskaya.service.UserService - Попытка выхода без активной сессии
+2026-01-29 15:01:36.415 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.459 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.459 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 15:01:36.461 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser успешно вошёл в систему
+2026-01-29 15:01:36.469 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.470 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 15:01:36.471 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 15:01:36.476 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.480 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.481 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: newuser
+2026-01-29 15:01:36.481 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь newuser успешно зарегистрирован
+2026-01-29 15:01:36.485 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.486 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 15:01:36.486 [main] WARN  c.j.matsarskaya.service.UserService - Неверный пароль для пользователя: testuser
+2026-01-29 15:01:36.489 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.489 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser вышел из системы
+2026-01-29 15:01:36.493 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:01:36.493 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 15:01:36.494 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует
+2026-01-29 15:01:44.824 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:01:44.843 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: nonexistent
+2026-01-29 15:01:44.900 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:01:44.902 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: existinguser
+2026-01-29 15:01:44.903 [main] WARN  c.j.m.repository.FileUserRepository - Пользователь existinguser уже существует в хранилище
+2026-01-29 15:01:44.910 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:01:44.912 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: testuser
+2026-01-29 15:01:44.912 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь testuser найден
+2026-01-29 15:01:44.920 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:01:44.920 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 15:01:44.924 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:01:44.924 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 15:01:44.924 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 15:01:44.927 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:01:44.928 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: newuser
+2026-01-29 15:01:44.928 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь newuser успешно сохранён
+2026-01-29 15:02:34.067 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:34.069 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:34.070 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:34.124 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:34.125 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:34.125 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:34.128 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:34.128 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:34.128 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:34.131 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:34.131 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:34.131 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:34.134 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:34.134 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:34.134 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:34.136 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:34.137 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:34.137 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:34.140 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:34.140 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:34.140 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:40.645 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:40.646 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:40.647 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:40.667 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 15:02:40.669 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 15:02:40.701 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:40.701 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:40.701 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:40.702 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 15:02:40.703 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 15:02:40.710 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:40.710 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:40.710 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:40.711 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 15:02:40.711 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 15:02:40.712 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 15:02:40.718 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 15:02:40.718 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 15:02:40.718 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 15:02:40.719 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 15:02:40.720 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: null
+2026-01-29 15:02:40.720 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: null
+2026-01-29 15:02:40.720 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: null
+2026-01-29 15:02:40.720 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь null не найден
+2026-01-29 15:02:40.721 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь null не найден
+2026-01-29 15:02:40.721 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: пользователь null не найден
+2026-01-29 15:02:40.721 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 15:04:17.513 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: nonexistent
+2026-01-29 15:04:17.515 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: пользователь nonexistent не найден
+2026-01-29 15:04:17.581 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Отображение страницы входа
+2026-01-29 15:04:17.592 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 15:04:17.592 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Успешный вход пользователя: testuser
+2026-01-29 15:04:17.597 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 15:04:17.598 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: неверный пароль для пользователя testuser
+2026-01-29 16:11:29.021 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 16:11:29.025 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 16:11:29.030 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:11:29.031 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 16:11:29.036 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:11:29.036 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 16:11:29.037 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 16:11:29.041 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 16:11:29.042 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 16:13:28.867 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 16:13:28.871 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 16:13:28.875 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:13:28.876 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 16:13:28.881 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:13:28.881 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 16:13:28.881 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 16:13:28.886 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 16:13:28.886 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 16:28:54.866 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 16:28:54.871 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 16:28:54.892 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:28:54.894 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 16:28:54.900 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:28:54.900 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 16:28:54.901 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 16:28:54.906 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 16:28:54.907 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 16:42:29.603 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: nonexistent
+2026-01-29 16:42:29.608 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: пользователь nonexistent не найден
+2026-01-29 16:42:29.624 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Отображение страницы входа
+2026-01-29 16:42:29.633 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:42:29.634 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Успешный вход пользователя: testuser
+2026-01-29 16:42:29.639 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:42:29.639 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: неверный пароль для пользователя testuser
+2026-01-29 16:42:29.936 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 16:42:29.936 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 16:42:29.941 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:42:29.941 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 16:42:29.945 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:42:29.945 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 16:42:29.946 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 16:42:29.950 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 16:42:29.951 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 16:42:29.959 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:29.959 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:29.961 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:42:29.965 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:29.965 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:29.965 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:42:29.967 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:29.967 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:29.967 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:42:29.969 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:29.969 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:29.969 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:42:29.971 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:29.971 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:29.971 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:42:29.973 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:29.973 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:29.973 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:42:29.975 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:29.975 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:29.975 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:42:30.251 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:30.253 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: nonexistent
+2026-01-29 16:42:30.256 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:30.256 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: existinguser
+2026-01-29 16:42:30.257 [main] WARN  c.j.m.repository.FileUserRepository - Пользователь existinguser уже существует в хранилище
+2026-01-29 16:42:30.259 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:30.260 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: testuser
+2026-01-29 16:42:30.260 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь testuser найден
+2026-01-29 16:42:30.262 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:30.263 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 16:42:30.265 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:30.265 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 16:42:30.266 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 16:42:30.268 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:42:30.269 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: newuser
+2026-01-29 16:42:30.269 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь newuser успешно сохранён
+2026-01-29 16:42:30.307 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.308 [main] DEBUG c.j.matsarskaya.service.UserService - Попытка выхода без активной сессии
+2026-01-29 16:42:30.309 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.312 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.312 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:42:30.312 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser успешно вошёл в систему
+2026-01-29 16:42:30.314 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.315 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 16:42:30.316 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 16:42:30.317 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.320 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.321 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: newuser
+2026-01-29 16:42:30.322 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь newuser успешно зарегистрирован
+2026-01-29 16:42:30.324 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.325 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:42:30.325 [main] WARN  c.j.matsarskaya.service.UserService - Неверный пароль для пользователя: testuser
+2026-01-29 16:42:30.327 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.327 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser вышел из системы
+2026-01-29 16:42:30.330 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:42:30.330 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 16:42:30.331 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует
+2026-01-29 16:44:49.533 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: nonexistent
+2026-01-29 16:44:49.538 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: пользователь nonexistent не найден
+2026-01-29 16:44:49.553 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Отображение страницы входа
+2026-01-29 16:44:49.560 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:44:49.561 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Успешный вход пользователя: testuser
+2026-01-29 16:44:49.567 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:44:49.568 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: неверный пароль для пользователя testuser
+2026-01-29 16:44:49.881 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 16:44:49.882 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 16:44:49.886 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:44:49.886 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 16:44:49.890 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:44:49.891 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 16:44:49.891 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 16:44:49.895 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 16:44:49.896 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 16:44:49.903 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:49.903 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:49.904 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:44:49.909 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:49.909 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:49.909 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:44:49.911 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:49.911 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:49.911 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:44:49.912 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:49.912 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:49.912 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:44:49.914 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:49.914 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:49.914 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:44:49.915 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:49.915 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:49.915 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:44:49.916 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:49.916 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:49.917 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:44:50.215 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:50.217 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: nonexistent
+2026-01-29 16:44:50.219 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:50.220 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: existinguser
+2026-01-29 16:44:50.220 [main] WARN  c.j.m.repository.FileUserRepository - Пользователь existinguser уже существует в хранилище
+2026-01-29 16:44:50.222 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:50.222 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: testuser
+2026-01-29 16:44:50.223 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь testuser найден
+2026-01-29 16:44:50.225 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:50.225 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 16:44:50.227 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:50.228 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 16:44:50.228 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 16:44:50.230 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:44:50.230 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: newuser
+2026-01-29 16:44:50.230 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь newuser успешно сохранён
+2026-01-29 16:44:50.268 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.268 [main] DEBUG c.j.matsarskaya.service.UserService - Попытка выхода без активной сессии
+2026-01-29 16:44:50.270 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.272 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.273 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:44:50.273 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser успешно вошёл в систему
+2026-01-29 16:44:50.274 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.275 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 16:44:50.275 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 16:44:50.276 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.278 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.279 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: newuser
+2026-01-29 16:44:50.280 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь newuser успешно зарегистрирован
+2026-01-29 16:44:50.281 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.282 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:44:50.282 [main] WARN  c.j.matsarskaya.service.UserService - Неверный пароль для пользователя: testuser
+2026-01-29 16:44:50.285 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.285 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser вышел из системы
+2026-01-29 16:44:50.287 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:44:50.288 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 16:44:50.288 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует
+2026-01-29 16:50:33.126 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: nonexistent
+2026-01-29 16:50:33.131 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: пользователь nonexistent не найден
+2026-01-29 16:50:33.145 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Отображение страницы входа
+2026-01-29 16:50:33.153 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:50:33.153 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Успешный вход пользователя: testuser
+2026-01-29 16:50:33.158 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:50:33.158 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: неверный пароль для пользователя testuser
+2026-01-29 16:50:33.574 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 16:50:33.574 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 16:50:33.578 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:50:33.578 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 16:50:33.582 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:50:33.583 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 16:50:33.583 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 16:50:33.587 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 16:50:33.588 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 16:50:33.596 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.596 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.598 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:50:33.603 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.603 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.603 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:50:33.605 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.605 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.605 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:50:33.606 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.606 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.606 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:50:33.607 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.608 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.608 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:50:33.609 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.609 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.609 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:50:33.610 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.610 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.610 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:50:33.852 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.853 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: nonexistent
+2026-01-29 16:50:33.855 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.856 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: existinguser
+2026-01-29 16:50:33.857 [main] WARN  c.j.m.repository.FileUserRepository - Пользователь existinguser уже существует в хранилище
+2026-01-29 16:50:33.859 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.859 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: testuser
+2026-01-29 16:50:33.859 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь testuser найден
+2026-01-29 16:50:33.861 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.861 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 16:50:33.863 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.863 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 16:50:33.863 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 16:50:33.864 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:50:33.865 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: newuser
+2026-01-29 16:50:33.865 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь newuser успешно сохранён
+2026-01-29 16:50:33.901 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.902 [main] DEBUG c.j.matsarskaya.service.UserService - Попытка выхода без активной сессии
+2026-01-29 16:50:33.904 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.906 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.906 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:50:33.907 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser успешно вошёл в систему
+2026-01-29 16:50:33.908 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.909 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 16:50:33.909 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 16:50:33.911 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.913 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.913 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: newuser
+2026-01-29 16:50:33.914 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь newuser успешно зарегистрирован
+2026-01-29 16:50:33.916 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.917 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:50:33.917 [main] WARN  c.j.matsarskaya.service.UserService - Неверный пароль для пользователя: testuser
+2026-01-29 16:50:33.919 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.919 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser вышел из системы
+2026-01-29 16:50:33.921 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:50:33.921 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 16:50:33.921 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует
+2026-01-29 16:57:53.764 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: nonexistent
+2026-01-29 16:57:53.770 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: пользователь nonexistent не найден
+2026-01-29 16:57:53.785 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Отображение страницы входа
+2026-01-29 16:57:53.795 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:57:53.795 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Успешный вход пользователя: testuser
+2026-01-29 16:57:53.800 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Обработка POST запроса на вход для пользователя: testuser
+2026-01-29 16:57:53.801 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Неудачная попытка входа: неверный пароль для пользователя testuser
+2026-01-29 16:57:54.102 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /home-page
+2026-01-29 16:57:54.102 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/home-page.jsp
+2026-01-29 16:57:54.106 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:57:54.107 [main] WARN  c.j.m.controller.FrontController - Попытка доступа к защищённой странице без авторизации: /quest-dragon
+2026-01-29 16:57:54.111 [main] INFO  c.j.m.controller.FrontController - Получен GET запрос на путь: /quest-dragon
+2026-01-29 16:57:54.111 [main] DEBUG c.j.matsarskaya.service.UserService - Проверка авторизации: пользователь testuser авторизован
+2026-01-29 16:57:54.111 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/quest-dragon.jsp
+2026-01-29 16:57:54.116 [main] INFO  c.j.m.controller.FrontController - Получен POST запрос на путь: /login-page
+2026-01-29 16:57:54.117 [main] DEBUG c.j.m.controller.FrontController - Запрос обработан успешно, перенаправление на: /WEB-INF/login-page.jsp
+2026-01-29 16:57:54.124 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.125 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.125 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:57:54.129 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.130 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.130 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:57:54.131 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.131 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.131 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:57:54.132 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.133 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.133 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:57:54.134 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.135 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.135 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:57:54.136 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.136 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.136 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:57:54.137 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.137 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.138 [main] INFO  c.j.m.service.StatisticService - StatisticService инициализирован
+2026-01-29 16:57:54.399 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.401 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: nonexistent
+2026-01-29 16:57:54.403 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.404 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: existinguser
+2026-01-29 16:57:54.404 [main] WARN  c.j.m.repository.FileUserRepository - Пользователь existinguser уже существует в хранилище
+2026-01-29 16:57:54.406 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.406 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: testuser
+2026-01-29 16:57:54.407 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь testuser найден
+2026-01-29 16:57:54.409 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.410 [main] DEBUG c.j.m.repository.FileUserRepository - Проверка существования пользователя: existinguser
+2026-01-29 16:57:54.412 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.412 [main] DEBUG c.j.m.repository.FileUserRepository - Поиск пользователя по имени: nonexistent
+2026-01-29 16:57:54.412 [main] DEBUG c.j.m.repository.FileUserRepository - Пользователь nonexistent не найден
+2026-01-29 16:57:54.415 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository инициализирован
+2026-01-29 16:57:54.415 [main] DEBUG c.j.m.repository.FileUserRepository - Сохранение пользователя: newuser
+2026-01-29 16:57:54.415 [main] INFO  c.j.m.repository.FileUserRepository - Пользователь newuser успешно сохранён
+2026-01-29 16:57:54.457 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.457 [main] DEBUG c.j.matsarskaya.service.UserService - Попытка выхода без активной сессии
+2026-01-29 16:57:54.459 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.461 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.461 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:57:54.462 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser успешно вошёл в систему
+2026-01-29 16:57:54.464 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.464 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: nonexistent
+2026-01-29 16:57:54.465 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь nonexistent не найден
+2026-01-29 16:57:54.467 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.469 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.470 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: newuser
+2026-01-29 16:57:54.470 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь newuser успешно зарегистрирован
+2026-01-29 16:57:54.472 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.473 [main] INFO  c.j.matsarskaya.service.UserService - Попытка входа пользователя: testuser
+2026-01-29 16:57:54.473 [main] WARN  c.j.matsarskaya.service.UserService - Неверный пароль для пользователя: testuser
+2026-01-29 16:57:54.476 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.476 [main] INFO  c.j.matsarskaya.service.UserService - Пользователь testuser вышел из системы
+2026-01-29 16:57:54.479 [main] INFO  c.j.matsarskaya.service.UserService - UserService инициализирован
+2026-01-29 16:57:54.480 [main] INFO  c.j.matsarskaya.service.UserService - Попытка регистрации пользователя: existinguser
+2026-01-29 16:57:54.480 [main] WARN  c.j.matsarskaya.service.UserService - Пользователь с именем existinguser уже существует

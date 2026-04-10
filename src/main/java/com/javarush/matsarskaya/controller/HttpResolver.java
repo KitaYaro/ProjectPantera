@@ -1,26 +1,24 @@
 package com.javarush.matsarskaya.controller;
 
 import com.javarush.matsarskaya.cmd.*;
-import com.javarush.matsarskaya.entity.UserFileStorage;
-import com.javarush.matsarskaya.repository.FileStatisticRepository;
-import com.javarush.matsarskaya.repository.FileUserRepository;
-import com.javarush.matsarskaya.repository.StatisticRepository;
-import com.javarush.matsarskaya.repository.UserRepository;
+import com.javarush.matsarskaya.repository.*;
 import com.javarush.matsarskaya.service.StatisticService;
 import com.javarush.matsarskaya.service.UserService;
+import com.javarush.matsarskaya.util.HibernateUtil;
+import org.hibernate.SessionFactory;
 
 import java.util.Map;
 
 public class HttpResolver {
     private final Map<String, Command> commandMap;
+    SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+
 
     public HttpResolver() {
-        UserFileStorage storage = new UserFileStorage();
-        UserRepository userRepository = new FileUserRepository(storage);
+        UserRepository userRepository = new HibernateUserRepository(sessionFactory);
+        StatisticRepository statisticRepository = new HibernateStatisticRepository(sessionFactory);
         UserService userService = new UserService(userRepository);
-
-        StatisticRepository statisticRepository = new FileStatisticRepository();
-        StatisticService statisticService = new StatisticService(statisticRepository);
+        StatisticService statisticService = new StatisticService(statisticRepository, userRepository);
 
         this.commandMap = Map.of(
                 "/home-page", new HomePage(),

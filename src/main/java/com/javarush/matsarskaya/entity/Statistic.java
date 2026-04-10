@@ -1,43 +1,51 @@
 package com.javarush.matsarskaya.entity;
 
-public class Statistic {
-    private final String username;
-    private int attempts;
-    private int wins;
-    private int losses;
+import jakarta.persistence.*;
 
-    public Statistic(String username, int attempts, int wins, int losses) {
-        this.username = username;
+@Entity
+@Table(name = "statistics")
+public class Statistic {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    @OneToOne
+    @JoinColumn(name = "user_id", unique = true)
+    private User user;
+    @Column(name = "attempts")
+    private int attempts = 0;
+    @Column(name = "wins")
+    private int wins = 0;
+    @Column(name = "losses")
+    private int losses = 0;
+
+    public Statistic(User user, int attempts, int wins, int losses) {
+        this.user = user;
         this.attempts = attempts;
         this.wins = wins;
         this.losses = losses;
     }
 
-    public String getUsername() {
-        return username;
+    public Statistic() {
+
     }
 
-    public int getAttempts() {
-        return attempts;
+
+    public Integer getId() { return id; }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public int getWins() {
-        return wins;
-    }
+    public User getUser() { return user; }
+    public void setUser(User user) { this.user = user; }
+    public int getAttempts() { return attempts; }
+    public void setAttempts(int attempts) { this.attempts = attempts; }
+    public int getWins() { return wins; }
+    public void setWins(int wins) { this.wins = wins; }
+    public int getLosses() { return losses; }
+    public void setLosses(int losses) { this.losses = losses; }
 
-    public int getLosses() {
-        return losses;
-    }
-
-    public void incrementAttempts() {
-        attempts++;
-    }
-
-    public void incrementWins() {
-        wins++;
-    }
-
-    public void incrementLosses() {
-        losses++;
-    }
+    public void incrementAttempts() { attempts++; }
+    public void incrementWins() { wins++; }
+    public void incrementLosses() { losses++; }
 }

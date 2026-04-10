@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
 
-@WebServlet({"/home-page", "/quest-dragon", "/login-page", "/register-page", "/logout", "/statistic-page"})
+@WebServlet({ "/home-page", "/quest-dragon", "/login-page", "/register-page", "/logout", "/statistic-page"})
 public class FrontController extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(FrontController.class);
     private final HttpResolver httpResolver;

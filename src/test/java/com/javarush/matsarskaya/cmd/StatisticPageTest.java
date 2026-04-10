@@ -1,6 +1,7 @@
 package com.javarush.matsarskaya.cmd;
 
 import com.javarush.matsarskaya.entity.Statistic;
+import com.javarush.matsarskaya.entity.User;
 import com.javarush.matsarskaya.service.StatisticService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -40,7 +41,8 @@ class StatisticPageTest {
     void testDoGetWithStatistic() {
         when(request.getSession()).thenReturn(session);
         when(session.getAttribute("username")).thenReturn("testuser");
-        Statistic stat = new Statistic("testuser", 10, 5, 5);
+        User user = new User("testuser", "password");
+        Statistic stat = new Statistic(user, 10, 5, 5);
         when(statisticService.getStatistic("testuser")).thenReturn(Optional.of(stat));
 
         String result = statisticPage.doGet(request);
