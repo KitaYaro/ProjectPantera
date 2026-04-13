@@ -82,10 +82,12 @@ public class QuestDragon implements Command{
                         session.setAttribute(SESSION_ATTR_TRUST, trust);
 
                         logger.info("STAGE DEBUG: currentStage={}, trust={}", currentStage, trust);
+                        int nextStage = currentStage + 1;
+                        session.setAttribute(SESSION_ATTR_STAGE, nextStage);
                         boolean isLossCondition = false;
-                        if (currentStage >= 4 && currentStage <= 7 && trust < QUEST_LOSS_THRESHOLD_EARLY) {
+                        if (nextStage >= 4 && nextStage <= 7 && trust < QUEST_LOSS_THRESHOLD_EARLY) {
                             isLossCondition = true;
-                        } else if (currentStage >= 8 && currentStage <= 11 && trust < QUEST_LOSS_THRESHOLD_LATE) {
+                        } else if (nextStage >= 8 && nextStage <= 11 && trust < QUEST_LOSS_THRESHOLD_LATE) {
                             isLossCondition = true;
                         }
 
@@ -99,11 +101,10 @@ public class QuestDragon implements Command{
                         }
                     }
 
-                    int nextStage = currentStage + 1;
-                    session.setAttribute(SESSION_ATTR_STAGE, nextStage);
-
                     Integer trust = (Integer) session.getAttribute(SESSION_ATTR_TRUST);
                     String username = (String) session.getAttribute(SESSION_USERNAME);
+                    int nextStage = currentStage + 1;
+                    session.setAttribute(SESSION_ATTR_STAGE, nextStage);
 
                     if (!Optional.ofNullable((Boolean) session.getAttribute(SESSION_ATTR_QUEST_FINISHED)).orElse(false) && nextStage == 11) {
                         session.setAttribute(SESSION_ATTR_QUEST_FINISHED, true);
