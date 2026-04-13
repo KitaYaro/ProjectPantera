@@ -17,6 +17,10 @@
             <column name="password" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
+            <column name="created_at" type="TIMESTAMP">
+                <constraints nullable="false"/>
+                <constraints updateble="false"/>
+            </column>
         </createTable>
     </changeSet>
 
@@ -37,6 +41,10 @@
             </column>
             <column name="losses" type="INTEGER" defaultValue="0">
                 <constraints nullable="false"/>
+            </column>
+            <column name="updated_at " type="TIMESTAMP">
+            </column>
+            <column name="version" type="INTEGER">
             </column>
         </createTable>
     </changeSet>

@@ -13,7 +13,7 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class UserService {
+public class UserService implements IUserService {
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
     private final UserRepository userRepository;
 
@@ -22,19 +22,30 @@ public class UserService {
         logger.info("UserService is initialized");
     }
 
+    @Override
     public void registerUser(String username, String password) {
-        logger.info("User Registration Attempt: {}", username);
 
-        if (userRepository.existsByUsername(username)) {
-            logger.warn("The user named {} already exists", username);
-            throw new UserAlreadyExistsException(username);
+        long startTime = System.currentTimeMillis();
+        try {
+            logger.info("User Registration Attempt: {}", username);
+
+            if (userRepository.existsByUsername(username)) {
+                logger.warn("The user named {} already exists", username);
+                throw new UserAlreadyExistsException(username);
+            }
+
+            User newUser = new User(username, password);
+            userRepository.save(newUser);
+            logger.info("User {} successfully registered", username);
+        } finally {
+            long duration = System.currentTimeMillis() - startTime;
+            if (duration > 100) {
+                logger.warn("registerUser operation took {}ms", duration);
+            }
         }
-
-        User newUser = new User(username, password);
-        userRepository.save(newUser);
-        logger.info("User {} successfully registered", username);
     }
 
+    @Override
     public Optional<User> loginUser(String username, String password) {
         logger.info("User Login Attempt: {}", username);
         Optional<User> user = userRepository.findByUsername(username);
@@ -64,6 +75,7 @@ public class UserService {
         return authenticated;
     }
 
+    @Override
     public void logout(HttpServletRequest request) {
         HttpSession session = request.getSession(false);
         if (session != null) {

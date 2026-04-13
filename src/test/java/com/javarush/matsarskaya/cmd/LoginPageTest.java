@@ -17,6 +17,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
+import static com.javarush.matsarskaya.config.ApplicationConstants.*;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Тесты для LoginPage")
@@ -42,53 +43,53 @@ class LoginPageTest {
     void testDoGet() {
         String result = loginPage.doGet(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/login-page.jsp");
+        assertThat(result).isEqualTo(VIEW_LOGIN);
     }
 
     @Test
     @DisplayName("Successful user login")
     void testDoPostSuccess() {
-        when(request.getParameter("username")).thenReturn("testuser");
-        when(request.getParameter("password")).thenReturn("password123");
+        when(request.getParameter(PARAM_USERNAME)).thenReturn("testuser");
+        when(request.getParameter(PARAM_PASSWORD)).thenReturn("password123");
         when(userService.loginUser("testuser", "password123"))
                 .thenReturn(Optional.of(new User("testuser", "password123")));
         when(request.getSession()).thenReturn(session);
 
         String result = loginPage.doPost(request);
 
-        assertThat(result).isEqualTo("/home-page");
+        assertThat(result).isEqualTo(PATH_HOME);
         verify(userService).loginUser("testuser", "password123");
         verify(request).getSession();
-        verify(session).setAttribute("username", "testuser");
+        verify(session).setAttribute(SESSION_USERNAME, "testuser");
     }
 
     @Test
     @DisplayName("Login with a non-existent user")
     void testDoPostUserNotFound() {
-        when(request.getParameter("username")).thenReturn("nonexistent");
-        when(request.getParameter("password")).thenReturn("password123");
+        when(request.getParameter(PARAM_USERNAME)).thenReturn("nonexistent");
+        when(request.getParameter(PARAM_PASSWORD)).thenReturn("password123");
         when(userService.loginUser("nonexistent", "password123"))
                 .thenThrow(new UserNotFoundException("nonexistent"));
 
         String result = loginPage.doPost(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/login-page.jsp");
-        verify(request).setAttribute("error", "User not found");
+        assertThat(result).isEqualTo(VIEW_LOGIN);
+        verify(request).setAttribute("error", ERROR_USER_NOT_FOUND);
         verify(userService).loginUser("nonexistent", "password123");
     }
 
     @Test
     @DisplayName("Log in with an incorrect password")
     void testDoPostInvalidPassword() {
-        when(request.getParameter("username")).thenReturn("testuser");
-        when(request.getParameter("password")).thenReturn("wrongpassword");
+        when(request.getParameter(PARAM_USERNAME)).thenReturn("testuser");
+        when(request.getParameter(PARAM_PASSWORD)).thenReturn("wrongpassword");
         when(userService.loginUser("testuser", "wrongpassword"))
                 .thenThrow(new InvalidCredentialsException());
 
         String result = loginPage.doPost(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/login-page.jsp");
-        verify(request).setAttribute("error", "Invalid username or password");
+        assertThat(result).isEqualTo(VIEW_LOGIN);
+        verify(request).setAttribute("error", ERROR_INVALID_CREDENTIALS);
         verify(userService).loginUser("testuser", "wrongpassword");
     }
 

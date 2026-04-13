@@ -1,6 +1,9 @@
 package com.javarush.matsarskaya.entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.DialectOverride;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "statistics")
@@ -17,6 +20,18 @@ public class Statistic {
     private int wins = 0;
     @Column(name = "losses")
     private int losses = 0;
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+    @Version
+    private Integer version;
+
+
+
+    @PrePersist
+    @PreUpdate
+    protected void onUpdate(){
+        updatedAt = LocalDateTime.now();
+    }
 
     public Statistic(User user, int attempts, int wins, int losses) {
         this.user = user;
@@ -48,4 +63,19 @@ public class Statistic {
     public void incrementAttempts() { attempts++; }
     public void incrementWins() { wins++; }
     public void incrementLosses() { losses++; }
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
 }

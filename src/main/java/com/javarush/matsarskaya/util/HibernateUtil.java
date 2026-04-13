@@ -8,8 +8,11 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class HibernateUtil {
     // Синглтон - инстанс
-    @Getter
     private static final SessionFactory sessionFactory;
+
+    public static SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
 
     static {
         try{

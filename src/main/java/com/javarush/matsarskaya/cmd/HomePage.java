@@ -2,6 +2,8 @@ package com.javarush.matsarskaya.cmd;
 
 import jakarta.servlet.http.HttpServletRequest;
 
+import static com.javarush.matsarskaya.config.ApplicationConstants.VIEW_HOME;
+
 public class HomePage implements Command{
 
     @Override
@@ -14,6 +16,6 @@ public class HomePage implements Command{
     }
     @Override
     public String getView() {
-        return "/WEB-INF/home-page.jsp";
+        return VIEW_HOME;
     }
 }

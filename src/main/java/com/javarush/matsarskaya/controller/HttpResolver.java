@@ -9,28 +9,55 @@ import org.hibernate.SessionFactory;
 
 import java.util.Map;
 
+import static com.javarush.matsarskaya.config.ApplicationConstants.*;
+
 public class HttpResolver {
     private final Map<String, Command> commandMap;
-    SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 
+    public HttpResolver(Map<String, Command> commandMap) {
+        this.commandMap = commandMap;
+    }
 
     public HttpResolver() {
+        this(createDefaultCommandMap());
+    }
+
+    private static Map<String, Command> createDefaultCommandMap() {
+        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         UserRepository userRepository = new HibernateUserRepository(sessionFactory);
         StatisticRepository statisticRepository = new HibernateStatisticRepository(sessionFactory);
         UserService userService = new UserService(userRepository);
         StatisticService statisticService = new StatisticService(statisticRepository, userRepository);
 
-        this.commandMap = Map.of(
-                "/home-page", new HomePage(),
-                "/quest-dragon", new QuestDragon(statisticService),
-                "/login-page", new LoginPage(userService),
-                "/register-page", new RegisterPage(userService),
-                "/logout", new LogoutPage(userService),
-                "/statistic-page", new StatisticPage(statisticService)
+        return Map.of(
+                PATH_HOME, new HomePage(),
+                PATH_LOGIN, new LoginPage(userService),
+                PATH_REGISTER, new RegisterPage(userService),
+                PATH_QUEST_DRAGON, new QuestDragon(statisticService),
+                PATH_LOGOUT, new LogoutPage(userService),
+                PATH_STATISTIC, new StatisticPage(statisticService)
         );
     }
-
     public Command resolve(String pathInfo) {
         return commandMap.getOrDefault(pathInfo, new HomePage());
     }
 }
+
+//    public HttpResolver() {
+//        UserRepository userRepository = new HibernateUserRepository(sessionFactory);
+//        StatisticRepository statisticRepository = new HibernateStatisticRepository(sessionFactory);
+//        UserService userService = new UserService(userRepository);
+//        StatisticService statisticService = new StatisticService(statisticRepository, userRepository);
+//
+//        this.commandMap = Map.of(
+//                PATH_HOME, new HomePage(),
+//                PATH_LOGIN, new LoginPage(userService),
+//                PATH_REGISTER, new RegisterPage(userService),
+//                PATH_QUEST_DRAGON, new QuestDragon(statisticService),
+//                PATH_LOGOUT, new LogoutPage(userService),
+//                PATH_STATISTIC, new StatisticPage(statisticService)
+//        );
+//    }
+//
+
+

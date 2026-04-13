@@ -3,6 +3,8 @@ package com.javarush.matsarskaya.entity;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -13,6 +15,12 @@ public class User {
     private String username;
     @Column(nullable = false)
     private String password;
+    @PrePersist
+    protected void onCreate(){
+        createdAt = LocalDateTime.now();
+    }
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private LocalDateTime createdAt;
 
     public User(String username, String password) {
         this.username = username;
@@ -20,7 +28,6 @@ public class User {
     }
 
     public User() {
-
     }
 
 
@@ -32,4 +39,8 @@ public class User {
 
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
 }

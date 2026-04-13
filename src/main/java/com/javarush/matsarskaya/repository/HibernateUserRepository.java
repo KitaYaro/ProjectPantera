@@ -10,8 +10,11 @@ import org.hibernate.query.Query;
 import java.util.Optional;
 
 public class HibernateUserRepository implements UserRepository {
-    private SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-//    UserRepository userRepo = new HibernateUserRepository(sessionFactory);
+    private final SessionFactory sessionFactory;
+
+    public HibernateUserRepository() {
+        this.sessionFactory = HibernateUtil.getSessionFactory();
+    }
 
     public HibernateUserRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;

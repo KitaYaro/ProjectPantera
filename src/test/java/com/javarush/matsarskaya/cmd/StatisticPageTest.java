@@ -16,6 +16,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
+import static com.javarush.matsarskaya.config.ApplicationConstants.*;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Tests for StatisticPage")
@@ -40,16 +41,16 @@ class StatisticPageTest {
     @DisplayName("GET a request with existing statistics")
     void testDoGetWithStatistic() {
         when(request.getSession()).thenReturn(session);
-        when(session.getAttribute("username")).thenReturn("testuser");
+        when(session.getAttribute(SESSION_USERNAME)).thenReturn("testuser");
         User user = new User("testuser", "password");
         Statistic stat = new Statistic(user, 10, 5, 5);
         when(statisticService.getStatistic("testuser")).thenReturn(Optional.of(stat));
 
         String result = statisticPage.doGet(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/statistic-page.jsp");
+        assertThat(result).isEqualTo(VIEW_STATISTIC);
         verify(request).getSession();
-        verify(session).getAttribute("username");
+        verify(session).getAttribute(SESSION_USERNAME);
         verify(statisticService).getStatistic("testuser");
         verify(request).setAttribute("statistic", stat);
     }
@@ -58,14 +59,14 @@ class StatisticPageTest {
     @DisplayName("GET a request without statistics")
     void testDoGetWithoutStatistic() {
         when(request.getSession()).thenReturn(session);
-        when(session.getAttribute("username")).thenReturn("testuser");
+        when(session.getAttribute(SESSION_USERNAME)).thenReturn("testuser");
         when(statisticService.getStatistic("testuser")).thenReturn(Optional.empty());
 
         String result = statisticPage.doGet(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/statistic-page.jsp");
+        assertThat(result).isEqualTo(VIEW_STATISTIC);
         verify(request).getSession();
-        verify(session).getAttribute("username");
+        verify(session).getAttribute(SESSION_USERNAME);
         verify(statisticService).getStatistic("testuser");
         verify(request, never()).setAttribute(eq("statistic"), any());
     }
@@ -74,13 +75,13 @@ class StatisticPageTest {
     @DisplayName("GET a request without an authorized user")
     void testDoGetWithoutUser() {
         when(request.getSession()).thenReturn(session);
-        when(session.getAttribute("username")).thenReturn(null);
+        when(session.getAttribute(SESSION_USERNAME)).thenReturn(null);
 
         String result = statisticPage.doGet(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/statistic-page.jsp");
+        assertThat(result).isEqualTo(VIEW_STATISTIC);
         verify(request).getSession();
-        verify(session).getAttribute("username");
+        verify(session).getAttribute(SESSION_USERNAME);
         verify(statisticService, never()).getStatistic(anyString());
     }
 
@@ -89,6 +90,6 @@ class StatisticPageTest {
     void testGetView() {
         String result = statisticPage.getView();
 
-        assertThat(result).isEqualTo("/WEB-INF/statistic-page.jsp");
+        assertThat(result).isEqualTo(VIEW_STATISTIC);
     }
 }

@@ -9,6 +9,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static com.javarush.matsarskaya.config.ApplicationConstants.VIEW_HOME;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Тесты для HomePage")
@@ -28,7 +29,7 @@ class HomePageTest {
     void testDoGet() {
         String result = homePage.doGet(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/home-page.jsp");
+        assertThat(result).isEqualTo(VIEW_HOME);
     }
 
     @Test
@@ -36,7 +37,7 @@ class HomePageTest {
     void testDoPost() {
         String result = homePage.doPost(request);
 
-        assertThat(result).isEqualTo("/WEB-INF/home-page.jsp");
+        assertThat(result).isEqualTo(VIEW_HOME);
     }
 
     @Test
@@ -44,6 +45,6 @@ class HomePageTest {
     void testGetView() {
         String result = homePage.getView();
 
-        assertThat(result).isEqualTo("/WEB-INF/home-page.jsp");
+        assertThat(result).isEqualTo(VIEW_HOME);
     }
 }

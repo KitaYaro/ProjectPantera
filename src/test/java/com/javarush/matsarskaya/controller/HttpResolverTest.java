@@ -11,6 +11,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.BeforeEach;
 
+import java.util.Map;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("Tests for HttpResolver")
@@ -19,7 +21,16 @@ class HttpResolverTest {
 
     @BeforeEach
     void setUp() {
-        httpResolver = new HttpResolver();
+        // Создаем команды без зависимостей
+        Map<String, Command> testCommands = Map.of(
+                "/home-page", new HomePage(),
+                "/quest-dragon", new QuestDragon(null),  // null потому что не нужны для теста
+                "/login-page", new LoginPage(null),
+                "/register-page", new RegisterPage(null),
+                "/logout", new LogoutPage(null),
+                "/statistic-page", new StatisticPage(null)
+        );
+        httpResolver = new HttpResolver(testCommands);
     }
 
     @Test
