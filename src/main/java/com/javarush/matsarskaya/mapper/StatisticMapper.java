@@ -5,7 +5,6 @@ import com.javarush.matsarskaya.entity.Statistic;
 
 public class StatisticMapper {
 
-    // Преобразование Entity -> DTO
     public static StatisticDTO toDTO(Statistic statistic){
         if (statistic == null) {
             return null;
@@ -17,7 +16,6 @@ public class StatisticMapper {
         dto.setWins(statistic.getWins());
         dto.setLosses(statistic.getLosses());
 
-        // Маппим User в UserDTO
         if (statistic.getUser() != null) {
             dto.setUser(UserMapper.toDTO(statistic.getUser()));
         }
@@ -25,7 +23,6 @@ public class StatisticMapper {
         return dto;
     }
 
-    // Преобразование DTO -> Entity
     public static Statistic toEntity(StatisticDTO dto){
         if (dto == null) {
             return null;
@@ -37,7 +34,6 @@ public class StatisticMapper {
         statistic.setWins(dto.getWins() != null ? dto.getWins() : 0);
         statistic.setLosses(dto.getLosses() != null ? dto.getLosses() : 0);
 
-        // Маппим UserDTO в User
         if (dto.getUser() != null) {
             statistic.setUser(UserMapper.toEntity(dto.getUser()));
         }

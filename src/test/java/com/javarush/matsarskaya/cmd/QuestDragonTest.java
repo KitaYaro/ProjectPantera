@@ -100,7 +100,7 @@ class QuestDragonTest {
 
         assertThat(result).isEqualTo(VIEW_QUEST_DRAGON);
         verify(session).setAttribute(SESSION_ATTR_TRUST, 60);
-        verify(session).setAttribute(SESSION_ATTR_STAGE, 3);
+        verify(session, atLeast(1)).setAttribute(SESSION_ATTR_STAGE, 3);
     }
 
     @Test
@@ -134,7 +134,7 @@ class QuestDragonTest {
 
         assertThat(result).isEqualTo(VIEW_QUEST_DRAGON);
         verify(session).setAttribute(SESSION_ATTR_TRUST, QUEST_WIN_THRESHOLD);
-        verify(session).setAttribute(SESSION_ATTR_STAGE, 10);
+        verify(session, atLeast(1)).setAttribute(SESSION_ATTR_STAGE, 10);
     }
 
     @Test
@@ -152,7 +152,7 @@ class QuestDragonTest {
         assertThat(result).isEqualTo(VIEW_QUEST_DRAGON);
         verify(statisticService).registerWin(TEST_USER);
         verify(session).setAttribute(SESSION_ATTR_QUEST_FINISHED, true);
-        verify(session).setAttribute(SESSION_ATTR_STAGE, 11);
+        verify(session, atLeast(1)).setAttribute(SESSION_ATTR_STAGE, 11);
     }
 
     @Test

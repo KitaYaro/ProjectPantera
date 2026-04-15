@@ -20,7 +20,7 @@ import static org.mockito.Mockito.*;
 import static com.javarush.matsarskaya.config.ApplicationConstants.*;
 
 @ExtendWith(MockitoExtension.class)
-@DisplayName("Тесты для LoginPage")
+@DisplayName("Tests for LoginPage")
 class LoginPageTest {
     @Mock
     private UserService userService;

@@ -43,21 +43,4 @@ public class HttpResolver {
     }
 }
 
-//    public HttpResolver() {
-//        UserRepository userRepository = new HibernateUserRepository(sessionFactory);
-//        StatisticRepository statisticRepository = new HibernateStatisticRepository(sessionFactory);
-//        UserService userService = new UserService(userRepository);
-//        StatisticService statisticService = new StatisticService(statisticRepository, userRepository);
-//
-//        this.commandMap = Map.of(
-//                PATH_HOME, new HomePage(),
-//                PATH_LOGIN, new LoginPage(userService),
-//                PATH_REGISTER, new RegisterPage(userService),
-//                PATH_QUEST_DRAGON, new QuestDragon(statisticService),
-//                PATH_LOGOUT, new LogoutPage(userService),
-//                PATH_STATISTIC, new StatisticPage(statisticService)
-//        );
-//    }
-//
-
 

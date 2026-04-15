@@ -1,6 +1,5 @@
 package com.javarush.matsarskaya.service;
 
-import com.javarush.matsarskaya.dto.StatisticDTO;
 import com.javarush.matsarskaya.entity.Statistic;
 
 import java.util.Optional;

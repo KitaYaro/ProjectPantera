@@ -5,19 +5,16 @@
 
 <hibernate-configuration>
     <session-factory>
-        <!-- Подключение к БД - значения по умолчанию для локальной разработки -->
-        <!-- При запуске в Docker значения переопределяются в HibernateUtil через System.getProperty() -->
+
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.url">jdbc:postgresql://localhost:5433/quest</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">postgres</property>
 
-        <!-- Настройки Hibernate -->
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <!-- Маппинг классов -->
         <mapping class="com.javarush.matsarskaya.entity.User"/>
         <mapping class="com.javarush.matsarskaya.entity.Statistic"/>
     </session-factory>

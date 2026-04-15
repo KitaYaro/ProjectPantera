@@ -1,7 +1,6 @@
 package com.javarush.matsarskaya.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.DialectOverride;
 
 import java.time.LocalDateTime;
 

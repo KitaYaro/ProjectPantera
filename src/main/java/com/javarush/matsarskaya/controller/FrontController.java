@@ -61,7 +61,6 @@ public class FrontController extends HttpServlet {
         }
     }
     private boolean isProtectedPath(String pathInfo) {
-//        return "/quest-dragon".equals(pathInfo) || "/statistic-page".equals(pathInfo);
         for (String protectedPath : PROTECTED_PATHS){
             if (protectedPath.equals(pathInfo)){
                 return true;

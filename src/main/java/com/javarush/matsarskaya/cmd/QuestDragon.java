@@ -72,7 +72,6 @@ public class QuestDragon implements Command{
                         try {
                             trustChange = Integer.parseInt(choice);
                         } catch (NumberFormatException e) {
-                            // Если choice не является числом, предполагаем что это выбор дракона на этапе 2
                             trustChange = 0;
                         }
 
@@ -116,7 +115,6 @@ public class QuestDragon implements Command{
                     }
                 }
             } catch (NumberFormatException e) {
-                // Если stageParam не является числом, перенаправляем на домашнюю страницу
                 return VIEW_HOME;
             }
         } else {

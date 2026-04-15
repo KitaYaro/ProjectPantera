@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static com.javarush.matsarskaya.config.ApplicationConstants.VIEW_HOME;
 
 @ExtendWith(MockitoExtension.class)
-@DisplayName("Тесты для HomePage")
+@DisplayName("Tests for HomePage")
 class HomePageTest {
     @Mock
     private HttpServletRequest request;
