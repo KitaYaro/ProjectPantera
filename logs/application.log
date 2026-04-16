@@ -1,0 +1,82 @@
+2026-04-15 09:51:25 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-04-15 09:51:25 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-04-15 09:51:25 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-15 09:51:25 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-04-15 09:51:25 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-15 09:51:25 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=10, trust=80
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=4, trust=35
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - CHECK: finished=false, isLossCondition=true, username=testuser, trust=35, stage=4
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=2, trust=60
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=9, trust=70
+2026-04-15 09:51:25 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-04-15 09:51:25 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-04-15 09:51:25 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-15 09:51:25 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-04-15 09:51:25 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-15 09:51:25 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-04-15 09:51:25 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-04-15 09:51:25 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-04-15 09:51:25 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-04-15 09:51:25 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-15 09:51:25 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 09:51:25 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-04-15 09:51:25 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists
+2026-04-15 10:02:18 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-04-15 10:02:18 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-04-15 10:02:19 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-15 10:02:19 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-04-15 10:02:19 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-04-15 10:02:19 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=10, trust=80
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=4, trust=35
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - CHECK: finished=false, isLossCondition=true, username=testuser, trust=35, stage=4
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=2, trust=60
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.cmd.QuestDragon - STAGE DEBUG: currentStage=9, trust=70
+2026-04-15 10:02:19 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-04-15 10:02:19 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-04-15 10:02:19 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-15 10:02:19 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-04-15 10:02:19 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-04-15 10:02:19 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-04-15 10:02:19 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-04-15 10:02:19 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-04-15 10:02:19 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-04-15 10:02:19 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-04-15 10:02:19 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-04-15 10:02:19 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-04-15 10:02:19 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists

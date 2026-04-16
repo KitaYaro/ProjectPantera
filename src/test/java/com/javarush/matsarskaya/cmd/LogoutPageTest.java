@@ -11,6 +11,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
+import static com.javarush.matsarskaya.config.ApplicationConstants.*;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Tests for LogoutPage")
@@ -35,7 +36,7 @@ class LogoutPageTest {
 
         String result = logoutPage.doPost(request);
 
-        assertThat(result).isEqualTo("/home-page");
+        assertThat(result).isEqualTo(PATH_HOME);
         verify(userService).logout(request);
     }
 
@@ -46,7 +47,7 @@ class LogoutPageTest {
 
         String result = logoutPage.doGet(request);
 
-        assertThat(result).isEqualTo("/home-page");
+        assertThat(result).isEqualTo(PATH_HOME);
         verify(userService).logout(request);
     }
 
@@ -55,6 +56,6 @@ class LogoutPageTest {
     void testGetView() {
         String result = logoutPage.getView();
 
-        assertThat(result).isEqualTo("/home-page");
+        assertThat(result).isEqualTo(PATH_HOME);
     }
 }

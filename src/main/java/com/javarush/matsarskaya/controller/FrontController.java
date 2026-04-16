@@ -11,8 +11,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.io.IOException;
 
+import static com.javarush.matsarskaya.config.ApplicationConstants.PROTECTED_PATHS;
 
-@WebServlet({"/home-page", "/quest-dragon", "/login-page", "/register-page", "/logout", "/statistic-page"})
+
+@WebServlet({ "/home-page", "/quest-dragon", "/login-page", "/register-page", "/logout", "/statistic-page"})
 public class FrontController extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(FrontController.class);
     private final HttpResolver httpResolver;
@@ -59,7 +61,12 @@ public class FrontController extends HttpServlet {
         }
     }
     private boolean isProtectedPath(String pathInfo) {
-        return "/quest-dragon".equals(pathInfo) || "/statistic-page".equals(pathInfo);
+        for (String protectedPath : PROTECTED_PATHS){
+            if (protectedPath.equals(pathInfo)){
+                return true;
+            }
+        }
+        return false;
     }
 }
 

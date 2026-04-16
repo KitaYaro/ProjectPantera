@@ -31,3 +31,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### AI tool ###
+.lingma
+AGENTS.md
+/plans
+nul

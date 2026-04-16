@@ -1,0 +1,23 @@
+services:
+  postgres-1:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: quest
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres-1
+    environment:
+      - JAVA_OPTS=-DDB_URL=jdbc:postgresql://postgres-1:5432/quest -DDB_USER=postgres -DDB_PASSWORD=postgres
+
+volumes:
+  postgres_data:

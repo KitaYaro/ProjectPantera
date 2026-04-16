@@ -1,10 +1,13 @@
 package com.javarush.matsarskaya.cmd;
 
+import com.javarush.matsarskaya.service.IUserService;
 import com.javarush.matsarskaya.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 
+import static com.javarush.matsarskaya.config.ApplicationConstants.PATH_HOME;
+
 public class LogoutPage implements Command{
-    private final UserService userService;
+    private final IUserService userService;
 
     public LogoutPage(UserService userService) {
             this.userService = userService;
@@ -23,6 +26,6 @@ public class LogoutPage implements Command{
 
     @Override
     public String getView() {
-        return "/home-page";
+        return PATH_HOME;
     }
 }

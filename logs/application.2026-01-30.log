@@ -1,0 +1,222 @@
+2026-01-30 16:29:40.675 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-01-30 16:29:40.691 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-01-30 16:29:40.736 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Displaying the login page
+2026-01-30 16:29:40.743 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-01-30 16:29:40.744 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-01-30 16:29:40.751 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-01-30 16:29:40.752 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-01-30 16:29:41.064 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-01-30 16:29:41.064 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-01-30 16:29:41.068 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-01-30 16:29:41.069 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-01-30 16:29:41.073 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-01-30 16:29:41.073 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-01-30 16:29:41.074 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-01-30 16:29:41.078 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-01-30 16:29:41.079 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-01-30 16:29:41.086 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.086 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.088 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 16:29:41.092 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.092 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.092 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 16:29:41.093 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.094 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.094 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 16:29:41.095 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.095 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.095 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 16:29:41.096 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.096 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.096 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 16:29:41.098 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.098 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.098 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 16:29:41.099 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.099 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.099 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 16:29:41.369 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.371 [main] DEBUG c.j.m.repository.FileUserRepository - Verifying the user's existence: nonexistent
+2026-01-30 16:29:41.373 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.374 [main] DEBUG c.j.m.repository.FileUserRepository - Saving the user: existinguser
+2026-01-30 16:29:41.374 [main] WARN  c.j.m.repository.FileUserRepository - The user existinguser already exists in the repository
+2026-01-30 16:29:41.378 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.379 [main] DEBUG c.j.m.repository.FileUserRepository - Search for a user by name: testuser
+2026-01-30 16:29:41.379 [main] DEBUG c.j.m.repository.FileUserRepository - User testuser found
+2026-01-30 16:29:41.381 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.381 [main] DEBUG c.j.m.repository.FileUserRepository - Verifying the user's existence: existinguser
+2026-01-30 16:29:41.383 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.383 [main] DEBUG c.j.m.repository.FileUserRepository - Search for a user by name: nonexistent
+2026-01-30 16:29:41.383 [main] DEBUG c.j.m.repository.FileUserRepository - User nonexistent not found
+2026-01-30 16:29:41.385 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 16:29:41.385 [main] DEBUG c.j.m.repository.FileUserRepository - Saving the user: newuser
+2026-01-30 16:29:41.386 [main] INFO  c.j.m.repository.FileUserRepository - User newuser saved successfully
+2026-01-30 16:29:41.424 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.425 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-01-30 16:29:41.426 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.428 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.428 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-01-30 16:29:41.428 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-01-30 16:29:41.430 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.431 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-01-30 16:29:41.431 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-01-30 16:29:41.434 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.436 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.437 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-01-30 16:29:41.437 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-01-30 16:29:41.439 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.440 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-01-30 16:29:41.440 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-01-30 16:29:41.442 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.442 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-01-30 16:29:41.444 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 16:29:41.445 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-01-30 16:29:41.445 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists
+2026-01-30 17:14:29.105 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-01-30 17:14:29.110 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-01-30 17:14:29.125 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Displaying the login page
+2026-01-30 17:14:29.134 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-01-30 17:14:29.135 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-01-30 17:14:29.140 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-01-30 17:14:29.141 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-01-30 17:14:29.493 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-01-30 17:14:29.494 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-01-30 17:14:29.497 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-01-30 17:14:29.498 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-01-30 17:14:29.503 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-01-30 17:14:29.503 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-01-30 17:14:29.503 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-01-30 17:14:29.508 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-01-30 17:14:29.509 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-01-30 17:14:29.515 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.516 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.517 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:14:29.521 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.521 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.521 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:14:29.523 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.523 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.523 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:14:29.524 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.524 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.524 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:14:29.525 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.525 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.525 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:14:29.526 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.526 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.526 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:14:29.527 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.527 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.527 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:14:29.774 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.776 [main] DEBUG c.j.m.repository.FileUserRepository - Verifying the user's existence: nonexistent
+2026-01-30 17:14:29.778 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.779 [main] DEBUG c.j.m.repository.FileUserRepository - Saving the user: existinguser
+2026-01-30 17:14:29.779 [main] WARN  c.j.m.repository.FileUserRepository - The user existinguser already exists in the repository
+2026-01-30 17:14:29.781 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.782 [main] DEBUG c.j.m.repository.FileUserRepository - Search for a user by name: testuser
+2026-01-30 17:14:29.782 [main] DEBUG c.j.m.repository.FileUserRepository - User testuser found
+2026-01-30 17:14:29.784 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.785 [main] DEBUG c.j.m.repository.FileUserRepository - Verifying the user's existence: existinguser
+2026-01-30 17:14:29.787 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.787 [main] DEBUG c.j.m.repository.FileUserRepository - Search for a user by name: nonexistent
+2026-01-30 17:14:29.787 [main] DEBUG c.j.m.repository.FileUserRepository - User nonexistent not found
+2026-01-30 17:14:29.789 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:14:29.789 [main] DEBUG c.j.m.repository.FileUserRepository - Saving the user: newuser
+2026-01-30 17:14:29.789 [main] INFO  c.j.m.repository.FileUserRepository - User newuser saved successfully
+2026-01-30 17:14:29.831 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.832 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-01-30 17:14:29.834 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.836 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.837 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-01-30 17:14:29.837 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-01-30 17:14:29.839 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.839 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-01-30 17:14:29.839 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-01-30 17:14:29.841 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.843 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.844 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-01-30 17:14:29.844 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-01-30 17:14:29.846 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.846 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-01-30 17:14:29.846 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-01-30 17:14:29.849 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.850 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-01-30 17:14:29.852 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:14:29.853 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-01-30 17:14:29.854 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists
+2026-01-30 17:15:21.536 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: nonexistent
+2026-01-30 17:15:21.540 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: user nonexistent not found
+2026-01-30 17:15:21.555 [main] DEBUG c.javarush.matsarskaya.cmd.LoginPage - Displaying the login page
+2026-01-30 17:15:21.562 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-01-30 17:15:21.563 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Successful user login: testuser
+2026-01-30 17:15:21.567 [main] INFO  c.javarush.matsarskaya.cmd.LoginPage - Processing the POST login request for the user: testuser
+2026-01-30 17:15:21.567 [main] WARN  c.javarush.matsarskaya.cmd.LoginPage - Failed login attempt: invalid password for user testuser
+2026-01-30 17:15:21.911 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /home-page
+2026-01-30 17:15:21.911 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/home-page.jsp
+2026-01-30 17:15:21.915 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-01-30 17:15:21.916 [main] WARN  c.j.m.controller.FrontController - An attempt to access a secure page without authorization: /quest-dragon
+2026-01-30 17:15:21.919 [main] INFO  c.j.m.controller.FrontController - Received GET request for path: /quest-dragon
+2026-01-30 17:15:21.920 [main] DEBUG c.j.matsarskaya.service.UserService - Authorization check: user testuser is authorized
+2026-01-30 17:15:21.920 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/quest-dragon.jsp
+2026-01-30 17:15:21.924 [main] INFO  c.j.m.controller.FrontController - Received POST request for path: /login-page
+2026-01-30 17:15:21.925 [main] DEBUG c.j.m.controller.FrontController - Request processed successfully, redirection to: /WEB-INF/login-page.jsp
+2026-01-30 17:15:21.933 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:21.933 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:21.934 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:15:21.938 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:21.938 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:21.938 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:15:21.939 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:21.940 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:21.940 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:15:21.941 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:21.941 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:21.941 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:15:21.943 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:21.943 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:21.943 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:15:21.945 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:21.945 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:21.945 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:15:21.946 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:21.946 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:21.946 [main] INFO  c.j.m.service.StatisticService - StatisticService initialized
+2026-01-30 17:15:22.179 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:22.181 [main] DEBUG c.j.m.repository.FileUserRepository - Verifying the user's existence: nonexistent
+2026-01-30 17:15:22.183 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:22.184 [main] DEBUG c.j.m.repository.FileUserRepository - Saving the user: existinguser
+2026-01-30 17:15:22.184 [main] WARN  c.j.m.repository.FileUserRepository - The user existinguser already exists in the repository
+2026-01-30 17:15:22.186 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:22.186 [main] DEBUG c.j.m.repository.FileUserRepository - Search for a user by name: testuser
+2026-01-30 17:15:22.186 [main] DEBUG c.j.m.repository.FileUserRepository - User testuser found
+2026-01-30 17:15:22.188 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:22.188 [main] DEBUG c.j.m.repository.FileUserRepository - Verifying the user's existence: existinguser
+2026-01-30 17:15:22.190 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:22.190 [main] DEBUG c.j.m.repository.FileUserRepository - Search for a user by name: nonexistent
+2026-01-30 17:15:22.190 [main] DEBUG c.j.m.repository.FileUserRepository - User nonexistent not found
+2026-01-30 17:15:22.192 [main] INFO  c.j.m.repository.FileUserRepository - FileUserRepository initialized
+2026-01-30 17:15:22.192 [main] DEBUG c.j.m.repository.FileUserRepository - Saving the user: newuser
+2026-01-30 17:15:22.192 [main] INFO  c.j.m.repository.FileUserRepository - User newuser saved successfully
+2026-01-30 17:15:22.230 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.231 [main] DEBUG c.j.matsarskaya.service.UserService - Attempt to log out without an active session
+2026-01-30 17:15:22.232 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.234 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.234 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-01-30 17:15:22.234 [main] INFO  c.j.matsarskaya.service.UserService - User testuser successfully logged in
+2026-01-30 17:15:22.236 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.236 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: nonexistent
+2026-01-30 17:15:22.236 [main] WARN  c.j.matsarskaya.service.UserService - User nonexistent not found
+2026-01-30 17:15:22.237 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.239 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.240 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: newuser
+2026-01-30 17:15:22.240 [main] INFO  c.j.matsarskaya.service.UserService - User newuser successfully registered
+2026-01-30 17:15:22.241 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.242 [main] INFO  c.j.matsarskaya.service.UserService - User Login Attempt: testuser
+2026-01-30 17:15:22.242 [main] WARN  c.j.matsarskaya.service.UserService - Invalid password for the user: testuser
+2026-01-30 17:15:22.244 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.244 [main] INFO  c.j.matsarskaya.service.UserService - User testuser logged out
+2026-01-30 17:15:22.246 [main] INFO  c.j.matsarskaya.service.UserService - UserService is initialized
+2026-01-30 17:15:22.246 [main] INFO  c.j.matsarskaya.service.UserService - User Registration Attempt: existinguser
+2026-01-30 17:15:22.247 [main] WARN  c.j.matsarskaya.service.UserService - The user named existinguser already exists
